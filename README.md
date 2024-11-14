@@ -8,18 +8,18 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 
 Tecnologias Utilizadas:
 
-PHP 8.x
-Laravel 10.x
-MySQL (ou outro banco de dados compatível)
-Bootstrap 5.x (para o front-end)
-JavaScript (para funcionalidades dinâmicas)
+* PHP 8.x
+* Laravel 10.x
+* SQLite (ou outro banco de dados compatível)
+* Bwootstrap 5.x (para o front-end)
+* JavaScript (para funcionalidades dinâmicas)
 
 Funcionalidades:
 
-Registro e login de usuários com autenticação.
-Gerenciamento de personagens (exibição, edição e exclusão).
-Página de informações (sobre mim) com links para redes sociais e projetos.
-Navegação responsiva com exibição condicional baseada na autenticação do usuário.
+* Registro e login de usuários com autenticação.
+* Gerenciamento de personagens (exibição, edição e exclusão).
+* Página de informações (sobre mim) com links para redes sociais e projetos.
+* Navegação responsiva com exibição condicional baseada na autenticação do usuário.
 
 Setup do Projeto:
 
