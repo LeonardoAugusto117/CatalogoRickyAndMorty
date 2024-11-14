@@ -60,15 +60,12 @@ class CharacterController extends Controller
         
     }
     
-
     public function saveCharacter($id)
 {
     // Fazendo a requisição para a API para pegar os dados do personagem
     $response = Http::get("https://rickandmortyapi.com/api/character/{$id}");
-    
 
     if ($response->successful()) {
-        
         $characterData = $response->json();
 
         // Verifica se o personagem já existe no banco de dados
@@ -80,10 +77,16 @@ class CharacterController extends Controller
                 'image' => $characterData['image'],
             ]
         );
+
+        // Verifique se o usuário está autenticado
         
-        // Verifique se o usuário autenticado está sendo obtido corretamente
-        $user = Auth::user();
-        $characters = $user->characters()->get();
+
+        if ($user = Auth::user()) {
+            // Associa o personagem ao usuário (se ainda não estiver associado)
+            $user->characters()->syncWithoutDetaching([$character->id]);
+        } else {
+            return redirect('/login')->with('error', 'Você precisa estar logado.');
+        }
 
         return redirect('/')->with('success', 'Personagem salvo com sucesso!');
     }
@@ -91,5 +94,6 @@ class CharacterController extends Controller
     return "Erro ao obter dados da API.";
 }
 
+    
 }
 

@@ -10,12 +10,14 @@ class Character extends Model
 {
     use HasFactory;
 
-    // Defina aqui os campos que podem ser preenchidos, se necessário
     protected $fillable = ['name', 'species', 'image', 'url', 'created_at', 'updated_at'];
 
     public function users(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'character_user', 'character_id', 'user_id');
     }
-    
+    public function characters()
+{
+    return $this->belongsToMany(Character::class, 'character_user', 'user_id', 'character_id');
+}
 }
