@@ -1,0 +1,129 @@
+body{
+    background-color:#E6E6E6 !important ;
+}
+.border-custom {
+
+    border: 2px solid #38589D;
+}
+
+.img-logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+.menu-links .menu-item {
+    background-color: #B2BED7;
+    padding: 5px 10px; /* Ajusta o padding para caber o tamanho da letra */
+    border-radius: 5px; /* Arredonda as bordas */
+    color: #000; /* Cor do texto, pode ser ajustada conforme desejado */
+    text-decoration: none;
+    margin-left: 8px; /* Espaçamento entre os links */
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.menu-item:hover {
+    background-color: #9CA8C1; /* Cor de fundo ao passar o mouse */
+}
+.navbar-brand {
+    margin-left: 15px; /* Espaçamento entre os links do menu */
+}
+
+
+.container{
+    padding: 5px 10px;
+}
+
+/* Estilização da seção de login */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4a90e2;
+}
+
+ion-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 1.2em;
+    color: #4a90e2;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.forget a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+.register {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.register a {
+    color: #4a90e2;
+    text-decoration: none;
+}
