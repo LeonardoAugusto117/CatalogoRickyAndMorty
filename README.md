@@ -31,10 +31,10 @@ Setup do Projeto:
 * Breez para autenticação de login
 
 
-Passos para Instalação
+Passso a passo para Instalação
 =======
 1- git clone git@github.com:LeonardoAugusto117/CartalogoRickyAndMorty.git
-
+=======
 2-Instale as Dependências do Projeto
 =======
 *Descrição*
