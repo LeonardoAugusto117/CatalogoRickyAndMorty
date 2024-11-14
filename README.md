@@ -1,4 +1,4 @@
-# CartalogoRickyAndMort
+# CatalogoRickyAndMort
 Projeto Laravel - [CatalogoRickyAndMort]
 
 Descrição
