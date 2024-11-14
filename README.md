@@ -1,7 +1,8 @@
 # CartalogoRickyAndMort
 Projeto Laravel - [CatalogoRickyAndMort]
 
-<<<<<<< HEAD Descrição
+Descrição
+=======
 
 Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcionalidades como autenticação de usuário, gerenciamento de personagens, e uma interface de navegação elegante. Ele também suporta a exibição de informações do usuário e integração com APIs.
 
@@ -72,7 +73,7 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 * Acessar a pasta /rickandmorty do arquivo clonado, e executar: composert install
 * copy .env.example .env (criar o arquiv .env)
 
-<<<<<<< HEAD
+
 3- Criando o banco: database.sqlite
 =======
 *3- Criando o banco: database.sqlite*
