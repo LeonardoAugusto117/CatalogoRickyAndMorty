@@ -34,6 +34,7 @@
                     <!-- Mostrar Login se o usuário não estiver autenticado -->
                     <a class="navbar-brand menu-item" href="/information">Sobre</a>
                     <a class="navbar-brand menu-item" href="{{ route('login') }}">Login</a>
+                    <a class="navbar-brand menu-item" href="{{ route('register') }}">Registre-se</a>
                     
                 @endauth
                 
