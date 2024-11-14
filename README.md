@@ -37,7 +37,6 @@ Passso a passo para Instalação
 
 * git@github.com:LeonardoAugusto117/CartalogoRickyAndMorty.git
   
-=======
 2-Instale as Dependências do Projeto
 =======
 *Descrição*
