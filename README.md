@@ -23,11 +23,13 @@ Navegação responsiva com exibição condicional baseada na autenticação do u
 
 Setup do Projeto:
 
-Pré-requisitos
-PHP 8.x ou superior
-Composer para gerenciar dependências do Laravel
-SQLite 
-Visual-Code (para compilação de ativos front-end)
+* Pré-requisitos
+* PHP 8.x ou superior
+* Composer para gerenciar dependências do Laravel
+* SQLite 
+* Visual-Code (para compilação de ativos front-end)
+* Breez para autenticação de login
+
 
 Passos para Instalação
 
@@ -46,6 +48,7 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 * MySQL (ou outro banco de dados compatível)
 * Bootstrap 5.x (para o front-end)
 * JavaScript (para funcionalidades dinâmicas)
+* Autenticador de usuário Breez
 
 *Funcionalidades:*
 
