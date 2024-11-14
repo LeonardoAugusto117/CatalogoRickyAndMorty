@@ -1,7 +1,7 @@
 # CartalogoRickyAndMort
-Projeto Laravel - [CartalogoRickyAndMort]
+Projeto Laravel - [CatalogoRickyAndMort]
 
-HEAD
+<<<<<<< HEAD
 Descrição
 
 Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcionalidades como autenticação de usuário, gerenciamento de personagens, e uma interface de navegação elegante. Ele também suporta a exibição de informações do usuário e integração com APIs.
@@ -67,7 +67,6 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 *1- git clone git@github.com:LeonardoAugusto117/CartalogoRickyAndMorty.git*
 
 *2-Instale as Dependências do Projeto*
->>>>>>> e735b93b5b2e8130a7bcf486732992754febe93f
 
 * Instalar composer
 * Instalar PHP
@@ -78,7 +77,6 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 3- Criando o banco: database.sqlite
 =======
 *3- Criando o banco: database.sqlite*
->>>>>>> e735b93b5b2e8130a7bcf486732992754febe93f
 
 * Acesse o diretório: C:\dev\php\CartalogoRickyAndMorty\rickandmorty\database pelo visual estudio, e criei o arquivo: database.sqlite
 
