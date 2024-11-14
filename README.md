@@ -1,8 +1,7 @@
 # CartalogoRickyAndMort
 Projeto Laravel - [CatalogoRickyAndMort]
 
-<<<<<<< HEAD
-Descrição
+<<<<<<< HEAD Descrição
 
 Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcionalidades como autenticação de usuário, gerenciamento de personagens, e uma interface de navegação elegante. Ele também suporta a exibição de informações do usuário e integração com APIs.
 
