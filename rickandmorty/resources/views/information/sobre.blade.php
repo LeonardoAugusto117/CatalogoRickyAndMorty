@@ -57,7 +57,7 @@
                     <ul class="list-unstyled">
                         <li><a href="https://github.com/LeonardoAugusto117/Ping_Pong-project-1" target="_blank">Projeto 1</a> - Ping_Pong-project-1.</li>
                         <li><a href="https://github.com/LeonardoAugusto117/Jogo-de-Azar" target="_blank">Projeto 2</a> - Jogo-de-Azar.</li>
-                        <li><a href="https://github.com/LeonardoAugusto117/CartalogoRickyAndMorty" target="_blank">Projeto 3</a> - CatalogoRickyAndMorty.</li>
+                        <li><a href="https://github.com/LeonardoAugusto117/CatalogoRickyAndMorty" target="_blank">Projeto 3</a> - CatalogoRickyAndMorty.</li>
                     </ul>
                 </section>
             </div>
