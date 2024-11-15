@@ -47,9 +47,8 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 
 * PHP 8.x
 * Laravel 10.x
-* MySQL (ou outro banco de dados compatível)
+* MySQL 
 * Bootstrap 5.x (para o front-end)
-* JavaScript (para funcionalidades dinâmicas)
 * Autenticador de usuário Breez
 
 *Funcionalidades:*
@@ -83,7 +82,7 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 =======
 *3- Criando o banco: database.sqlite*
 
-* Acesse o diretório: C:\dev\php\CartalogoRickyAndMorty\rickandmorty\database pelo visual estudio, e criei o arquivo: database.sqlite
+* Acesse o diretório: ?:\dev\php\CatalogoRickyAndMorty\rickandmorty\database pelo visual estudio, e criei o arquivo: database.sqlite
 
 * Abra o arquivo: .env e configure o banco:
 
