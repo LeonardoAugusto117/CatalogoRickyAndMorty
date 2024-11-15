@@ -159,19 +159,6 @@ Problemas Comuns:
 * Verifique se a tabela usuarios está corretamente configurada e que os guards de autenticação estão definidos.
 
 
-Contribuição:
-=======
-*Contribuição:*
-
-
-* Faça um fork do projeto
-* Crie uma nova branch: git checkout -b minha-nova-feature
-* Commit suas alterações: git commit -m 'Adicionei uma nova feature'
-* Faça o push para a branch: git push origin minha-nova-feature
-* Abra um Pull Request
-
-
-
 Contato:
 Autor: Leonardo Augusto de Paula
 =======
