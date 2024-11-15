@@ -10,9 +10,9 @@ Tecnologias Utilizadas:
 
 * PHP 8.x
 * Laravel 10.x
-* SQLite (ou outro banco de dados compatível)
-* Bwootstrap 5.x (para o front-end)
-* JavaScript (para funcionalidades dinâmicas)
+* SQLite
+* Bwootstrap 5.x 
+* JavaScript 
 
 Funcionalidades:
 
