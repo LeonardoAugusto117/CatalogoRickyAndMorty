@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http;
 use App\Models\Character;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+
 
 class CharacterController extends Controller
 {
@@ -26,7 +28,27 @@ class CharacterController extends Controller
         }
     }
 
+    public function loadMoreCharacters(Request $request)
+    {
+ 
+        $page = $request->input('page', 1);
+        
 
+        $response = Http::get('https://rickandmortyapi.com/api/character', [
+            'page' => $page,  // Passa o número da página
+        ]);
+    
+        // Verifica se a requisição foi bem-sucedida
+        if ($response->successful()) {
+          
+            $characters = $response->json()['results'];
+    
+            return response()->json($characters);
+        } else {
+            return response()->json(['error' => 'Erro ao carregar personagens.'], 500);
+        }
+    }
+    
 
     public function favorites()
 {
@@ -93,6 +115,7 @@ class CharacterController extends Controller
 
     return "Erro ao obter dados da API.";
 }
+
 
     
 }

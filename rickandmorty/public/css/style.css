@@ -1,6 +1,10 @@
- body{
-    background-color:#E6E6E6 !important ;
-}
+body {
+    background-image: url('../img/login.png');
+    background-size: cover; /* Garantir que a imagem ocupe toda a tela */
+    background-position: center; /* Centralizar a imagem */
+    background-attachment: fixed; /* Efeito de paralaxe se necessário */
+    height: 100%;
+  }
 .border-custom {
 
     border: 2px solid #38589D;

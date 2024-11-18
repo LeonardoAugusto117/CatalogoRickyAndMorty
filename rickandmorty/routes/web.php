@@ -30,6 +30,8 @@ Route::get('/information', [SobreController::class, 'index'])->name('sobre');
 Route::get('/chars/{id}', [CharacterController::class, 'characters']);// Rota para exibir os personagens na tela 
 Route::post('/char/{id}', [CharacterController::class, 'saveCharacter'])->name('saveCharacter');// Tratativa para favoritar personagem
 
+Route::get('/load-more-characters', [CharacterController::class, 'loadMoreCharacters']);
+
 Route::get('/favorites', [FavoritosController::class, 'index'])->name('favorites.index');
 
 require __DIR__.'/auth.php';
