@@ -35,6 +35,11 @@
         <p>&copy; 2024 Rick and Morty App. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Botão de Subir -->
+    <button id="scrollToTopBtn" class="btn btn-primary" style="display: none;">
+        ☰
+    </button>
+
     <!-- Script de Carregamento Infinito -->
     <script>
         let page = 1;
@@ -82,6 +87,22 @@
                         loading = false; // Permitir tentar novamente em caso de erro
                     });
             }
+
+            // Exibe ou esconde o botão de subir
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Função para rolar para o topo
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         };
     </script>
 
