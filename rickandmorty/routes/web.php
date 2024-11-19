@@ -3,9 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CharacterController;
 use App\Http\Controllers\FavoritosController;
-use App\Providers\AuthenticatedSessionController;
+use App\Http\Controllers\MensagersController;
 use App\Http\Controllers\SobreController;
 use Illuminate\Support\Facades\Route;
+use App\Providers\AuthenticatedSessionController;
 
 Route::get('/', function () {
     return view('index');
@@ -33,5 +34,6 @@ Route::post('/char/{id}', [CharacterController::class, 'saveCharacter'])->name('
 Route::get('/load-more-characters', [CharacterController::class, 'loadMoreCharacters']);
 
 Route::get('/favorites', [FavoritosController::class, 'index'])->name('favorites.index');
+Route::get('/mensagers', [MensagersController::class, 'index'])->name('mensagers.index');
 
 require __DIR__.'/auth.php';

@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
+
+    
     <x-navbar/>
 
     <section class="container my-5">
@@ -31,14 +34,16 @@
         </div>
     </section>
 
+    <!-- Botão de Subir -->
+    <button id="scrollToTopBtn" class="btn btn-primary" >
+        <i class="bi bi-arrow-up-circle-fill" id="icon"></i>
+    </button>
+
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Rick and Morty App. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Botão de Subir -->
-    <button id="scrollToTopBtn" class="btn btn-primary" style="display: none;">
-        ☰
-    </button>
+    
 
     <!-- Script de Carregamento Infinito -->
     <script>

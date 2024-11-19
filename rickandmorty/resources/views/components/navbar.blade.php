@@ -1,4 +1,4 @@
-<nav style="background-color: #38589D;">
+<nav style="background-color: #000B58;">
     <div class="navbar navbar-expand-lg container">
         <!-- Logo -->
         <a class="navbar-brand" href="/">
@@ -33,6 +33,7 @@
                 @else
                     <!-- Mostrar Login se o usuário não estiver autenticado -->
                     <a class="navbar-brand menu-item" href="/information">Sobre</a>
+                    <a class="navbar-brand menu-item" href="/mensagers">Contato</a>
                     <a class="navbar-brand menu-item" href="{{ route('login') }}">Login</a>
                     <a class="navbar-brand menu-item" href="{{ route('register') }}">Registre-se</a>
                     
