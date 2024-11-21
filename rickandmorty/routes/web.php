@@ -35,5 +35,8 @@ Route::get('/load-more-characters', [CharacterController::class, 'loadMoreCharac
 
 Route::get('/favorites', [FavoritosController::class, 'index'])->name('favorites.index');
 Route::get('/mensagers', [MensagersController::class, 'index'])->name('mensagers.index');
+Route::get('/search', [CharacterController::class, 'search'])->name('characters.search');
+
+
 
 require __DIR__.'/auth.php';

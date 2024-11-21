@@ -15,6 +15,12 @@
     <x-navbar/>
 
     <section class="container my-5">
+
+        <form class="search-form" method="GET" action="{{ url('/') }}">
+            <input type="search" class="search-input" name="query" placeholder="Pesquisar" aria-label="Pesquisar" value="{{ request()->input('query') }}">
+            <button type="submit" class="search-button">Pesquisar</button>
+        </form>
+        
         <div class="row justify-content-center">
             @foreach ($characters as $character)
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" style="cursor: pointer">
@@ -39,10 +45,7 @@
         <i class="bi bi-arrow-up-circle-fill" id="icon"></i>
     </button>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Rick and Morty App. Todos os direitos reservados.</p>
-    </footer>
-
+   
     
 
     <!-- Script de Carregamento Infinito -->
@@ -112,5 +115,10 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Rick and Morty App. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

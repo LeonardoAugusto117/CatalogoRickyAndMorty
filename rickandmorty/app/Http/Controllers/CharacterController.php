@@ -10,22 +10,41 @@ use Illuminate\Http\Request;
 
 class CharacterController extends Controller
 {
-    public function index()
-    {
-        // Fazendo a requisição para a API
-        $response = Http::get('https://rickandmortyapi.com/api/character');
+    public function index(Request $request)
+{
+    // Fazendo a requisição para a API
+    $response = Http::get('https://rickandmortyapi.com/api/character');
 
-        // Verificando se a requisição foi bem-sucedida
-        if ($response->successful()) {
-            // Decodifica a resposta JSON automaticamente
-            $characters = $response->json()['results'];
+    // Verificando se a requisição foi bem-sucedida
+    if ($response->successful()) {
+        // Decodifica a resposta JSON automaticamente
+        $characters = $response->json()['results'];
 
-            // Retorna a view com os personagens
-            return view('index', compact('characters')); // Passando os personagens para a view
-        } else {
-            // Caso haja um erro, exibe uma mensagem de erro
-            return "Erro ao obter dados da API.";
+        // pesquisa
+        if ($request->has('query') && !empty($request->input('query'))) {
+            $query = strtolower($request->input('query')); // Pega a pesquisa e converte para minúsculas
+            // Filtra os personagens baseados no nome
+            $characters = collect($characters)->filter(function ($character) use ($query) {
+                return strpos(strtolower($character['name']), $query) !== false;
+            })->values()->all();
         }
+
+        // Retorna a view com os personagens (filtrados ou todos)
+        return view('index', compact('characters'));
+    } else {
+        // Caso haja um erro, exibe uma mensagem de erro
+        return "Erro ao obter dados da API.";
+    }
+}
+
+    public function search(Request $request)
+    {
+        $query = $request->input('query'); // Termo pesquisado
+    
+        // Buscar personagens com o nome correspondente
+        $characters = Character::where('name', 'LIKE', "%{$query}%")->get(); // Isso retorna uma coleção de objetos Eloquent
+    
+        return view('index', compact('characters')); // Retornando para a view
     }
 
     public function loadMoreCharacters(Request $request)
