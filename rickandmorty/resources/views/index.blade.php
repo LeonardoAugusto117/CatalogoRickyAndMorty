@@ -17,9 +17,9 @@
     <section class="container my-5">
 
         <form class="search-form" method="GET" action="{{ url('/') }}">
-            <input type="search" class="search-input" name="query" placeholder="Pesquisar" aria-label="Pesquisar" value="{{ request()->input('query') }}">
-            <button type="submit" class="search-button">Pesquisar</button>
-        </form>
+    <input type="search" class="search-input" name="query" placeholder="Pesquisar" aria-label="Pesquisar" value="{{ request()->input('query') }}">
+    <button type="submit" class="search-button">Pesquisar</button>
+</form>
         
         <div class="row justify-content-center">
             @foreach ($characters as $character)

@@ -105,7 +105,7 @@ body {
     align-items: center; /* Centraliza o ícone verticalmente */
     position: fixed;
     bottom: 20px;
-    right: 80px;
+    right: 30px;
     border-radius: 50%; /* Torna o botão completamente circular */
     padding: 0; 
 }
