@@ -65,6 +65,8 @@
         </div>
     </main>
 
-    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy;  2024 Rick and Morty App. All rights reserved - v1.0.0.</p>
+    </footer>
 </body>
 </html>

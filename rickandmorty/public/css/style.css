@@ -85,6 +85,12 @@ body {
 .container {
     max-width: 1200px;
 }
+footer {
+    background-color: #333; /* Substitua por 'bg-dark' do Bootstrap se necessário */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
 
 /* Margem na seção */
 .my-5 {
