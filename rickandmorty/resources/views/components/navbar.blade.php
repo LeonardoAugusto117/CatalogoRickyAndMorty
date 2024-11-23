@@ -14,9 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="ms-auto menu-links">
                 <!-- Home Link -->
-                <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="dropdownDefault" data-bs-toggle="dropdown" aria-expanded="false">
                 <a class="btn btn-sm btn-outline-secondary navbar-brand menu-item" href="/">Home</a>
-                </button>
 
                 <!-- Verifica se o usuário está autenticado -->
                 @auth

@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/login.png');
+    background-image: url('../img/home_page.jpg');
     background-size: cover; /* Garantir que a imagem ocupe toda a tela */
     background-position: center; /* Centralizar a imagem */
     background-attachment: fixed; /* Efeito de paralaxe se necessário */
@@ -17,10 +17,10 @@ body {
 }
 
 .menu-links .menu-item {
-    background-color: #A9D3E9;
+    background-color: #000407;
     padding: 5px 10px; /* Ajusta o padding para caber o tamanho da letra */
     border-radius: 10px; 
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     display: right;
     margin-left: 0px; 
@@ -67,7 +67,7 @@ body {
 
 /* Botão do Card */
 .btn-primary {
-    background-color: #38589D; /* Cor personalizada do botão */
+    background-color: #000000; /* Cor personalizada do botão */
     border: none; /* Remove a borda padrão do botão */
     border-radius: 5px; /* Arredonda o botão */
     transition: background-color 0.2s; /* Transição para efeito de hover */
@@ -78,18 +78,22 @@ body {
 
 /* Efeito Hover no Botão */
 .btn-primary:hover {
-    background-color: #2c4678; /* Tom mais escuro para o hover */
+    background-color: #000000; /* Tom mais escuro para o hover */
 }
 
 /* Container para centralizar os cards */
 .container {
     max-width: 1200px;
 }
+
 footer {
-    background-color: #333; /* Substitua por 'bg-dark' do Bootstrap se necessário */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Margem na seção */
@@ -99,7 +103,7 @@ footer {
 }
 
 #scrollToTopBtn {
-    background-color: #000B58;
+    background-color: #000000;
     color: white;
     border: none;
     width: 60px; /* Tamanho do botão */
