@@ -72,10 +72,11 @@ Este projeto é uma aplicação web desenvolvida em Laravel que inclui funcional
 
 *2-Instale as Dependências do Projeto*
 
-* Instalar composer
+* Instalar composer pelo slink: https://getcomposer.org depois -> Acessar a pasta /rickandmorty, abrir o CMD na barra e executar o seguinte comando: composer install e depois composer upgrade.
 * Instalar PHP
-* Acessar a pasta /rickandmorty do arquivo clonado, e executar: composert install
 * copy .env.example .env (criar o arquiv .env)
+* para criar chaves php artisan key:generate
+
 
 
 3- Criando o banco: database.sqlite
